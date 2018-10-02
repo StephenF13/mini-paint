@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #e9e9e9;
+    color: grey;
+    line-height: 1.8;
+    font-family: serif;
+}
+
+.wrapper {
+
+    margin: 0 auto;
+    padding: 20px 100px;
+    text-align: center;
+}
+
+/*réparer le flux*/
+
+.repairFlux {
+    clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    padding: 0;
+    margin: 0;
+    display: block;
+    line-height: 0;
+    font-size: 0;
+}
+
+/* img responsive */
+
+.imgResponsive {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #5a6268;
+    text-decoration: underline;
+}
+
+#canvas {
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 20px;
+    border: #1d2124 10px solid;
+}
+
+#palette {
+    display: none;
+    background-color: white;
+    margin-left: 50px;
+    cursor: crosshair;
+}
+
+.color {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.black {
+    background-color: black;
+}
+
+.maroon {
+    background-color: maroon;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+button {
+    margin-left: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+#image img:hover {
+    cursor: pointer;
+}
+
+#image img {
+    margin: 10px 30px;
+}
+
